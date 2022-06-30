@@ -222,6 +222,10 @@ header {
 
 /* NEW BOOKS */
 
+#newbooks {
+    background-color: #eeeeee;
+}
+
 .newbooks__container {
     padding-top: 12%;
 }
@@ -247,6 +251,7 @@ header {
 .books {
     display: flex;
     flex-wrap: wrap;
+    justify-content: space-between;
 }
 
 .book:hover .book__image--wrapper {
