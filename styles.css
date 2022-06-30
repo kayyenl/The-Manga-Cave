@@ -150,6 +150,10 @@ header {
 
 /* HIGHLIGHTS */
 
+#highlights {
+    background-color: #f3c8d0
+}
+
 #highlights:before {
     content: "";
 }
