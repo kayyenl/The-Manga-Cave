@@ -11,7 +11,6 @@
 
 h1, h2, h3, h4, h5, h6 {
     color: #242424;
-    text-align: center;
     line-height: 1.25;
 }
 
@@ -88,6 +87,7 @@ ul {
     width: 100%;
     max-width: 1200px;
     margin: 0 auto;
+    padding: 0 40px;
 }
 
 /* HEADER */
@@ -140,3 +140,13 @@ header {
 }
 
 /* HIGHLIGHTS */
+
+.highlight__wrapper {
+    display: flex;
+}
+
+.highlight {
+    text-align: center;
+    width: calc(100%/3);
+    
+}
