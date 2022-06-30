@@ -96,10 +96,11 @@ header {
     align-items: center;
     justify-content: space-around;
     padding: 0 50px;
+    padding-top: 40px;
 }
 
 .img__slight-shrink {
-    width: 80%;
+    padding: 30px;
 }
 
 .header__description {
@@ -120,4 +121,10 @@ header {
 
 .header__button:active {
     transform: translateY(3px);
+}
+
+.header__huge-image {
+    height: 100%;
+    max-height: 50vh;
+    padding: 20px;
 }
