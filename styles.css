@@ -167,8 +167,7 @@ header {
 /* HIGHLIGHTS AND NEWBOOKS */
 
 #highlights,
-#newbooks,
-footer {
+#newbooks {
     background-color: #f3c8d0;
     position: relative;
 }
@@ -176,8 +175,7 @@ footer {
 #highlights:before,
 #highlights:after, 
 #newbooks:before,
-#newbooks:after,
-footer:before {
+#newbooks:after {
     content: "";
     background: url(wave.png);
     position: absolute;
@@ -188,8 +186,7 @@ footer:before {
 }
 
 #highlights:before,
-#newbooks:before,
-footer:before {
+#newbooks:before {
     top: 1px;
     transform: translateY(-100%);
 }
@@ -316,6 +313,31 @@ footer:before {
 }
 
 /* FOOTER */
-footer {
-    padding-top: 12%;
+#footer {
+    background-color: #020205;
+    padding-bottom: 6%;
+}
+
+.footer__details {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.footer__link {
+    color: white;
+    text-decoration: none;
+}
+
+.footer__links {
+    padding-top: 12px;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer__copyright {
+    padding-top: 32px;
+    color: white;
 }
