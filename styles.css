@@ -34,6 +34,10 @@ p {
     line-height: 1.4;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 .red__text {
     color: #f41f43
 }
@@ -138,7 +142,8 @@ header {
     align-items: center;
     justify-content: space-around;
     padding: 0 50px;
-    padding-top: 40px;
+    padding-top: 8%;
+    padding-bottom: 16%;
 }
 
 .img__slight-shrink {
@@ -159,9 +164,10 @@ header {
 }
 
 .header__huge-image {
-    height: 80%;
+    height: 100%;
     max-height: 50vh;
     padding: 20px;
+    padding-bottom: 40px;
 }
 
 /* HIGHLIGHTS AND NEWBOOKS */
@@ -241,6 +247,7 @@ header {
 
 .limiteded__container {
     padding-top: 12%;
+    padding-bottom: 12%;
 }
 
 .book {
@@ -340,4 +347,8 @@ header {
 .footer__copyright {
     padding-top: 32px;
     color: white;
+}
+
+.footer__notallowed {
+    cursor: not-allowed;
 }
