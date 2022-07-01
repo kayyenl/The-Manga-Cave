@@ -436,3 +436,50 @@ header {
         display: flex;
     }
 }
+
+/* SMALL PHONES, TABLETS AND LARGE SMARTPHONES */
+
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 24px;
+    }
+
+    .header__description {
+        padding-bottom: 48px;
+    }
+
+    .header__container {
+        padding-top: 0px;
+        justify-content: center;
+    }
+
+    .book {
+        width: 50%;
+    }
+}
+
+@media (max-width:480px) {
+    .header__container {
+        padding-top: 18%;
+    }
+
+    .highlight__wrapper {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        margin: 0 auto;
+    }
+
+    .highlight {
+        width: 100%;
+        padding-bottom: 32px;
+    }
+
+    .book {
+        width: 100%;
+    }
+}
