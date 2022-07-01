@@ -109,7 +109,7 @@ ul {
 /* HEADER */
 
 header {
-    height: calc(100vh - 100px);
+    height: 94vh;
     background-color: #eeeeee;
 }
 
