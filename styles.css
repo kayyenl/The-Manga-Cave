@@ -156,15 +156,18 @@ header {
     padding: 20px;
 }
 
-/* HIGHLIGHTS */
+/* HIGHLIGHTS AND NEWBOOKS */
 
-#highlights {
+#highlights,
+#newbooks {
     background-color: #f3c8d0;
     position: relative;
 }
 
 #highlights:before,
-#highlights:after {
+#highlights:after, 
+#newbooks:before,
+#newbooks:after {
     content: "";
     background: url(wave.png);
     position: absolute;
@@ -174,12 +177,14 @@ header {
     background-repeat: no-repeat;
 }
 
-#highlights:before {
+#highlights:before,
+#newbooks:before {
     top: 1px;
     transform: translateY(-100%);
 }
 
-#highlights:after {
+#highlights:after,
+#newbooks:after {
     bottom: 1px;
     transform: translateY(100%)  rotate(180deg);
 }
@@ -220,13 +225,13 @@ header {
     font-weight: 500;
 }
 
-/* NEW BOOKS */
+/* LIMITED EDITION */
 
-#newbooks {
+#limiteded {
     background-color: #eeeeee;
 }
 
-.newbooks__container {
+.limiteded__container {
     padding-top: 12%;
 }
 
