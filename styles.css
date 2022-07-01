@@ -126,6 +126,25 @@ ul {
     color: #f41f43;
 }
 
+/* BURGER MENU */
+
+.btn__menu {
+    background-color: transparent;
+    border: none;
+    font-size: 40px;
+    text-align: center;
+}
+
+.menu__backdrop {
+    position: absolute;
+    background-color: black;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 10;
+}
+
 /* HEADER */
 
 header {
@@ -349,6 +368,6 @@ header {
     color: white;
 }
 
-.footer__notallowed {
+.notallowed {
     cursor: not-allowed;
 }
