@@ -177,7 +177,7 @@ footer {
 #highlights:after, 
 #newbooks:before,
 #newbooks:after,
-footer {
+footer:before {
     content: "";
     background: url(wave.png);
     position: absolute;
@@ -189,7 +189,7 @@ footer {
 
 #highlights:before,
 #newbooks:before,
-footer {
+footer:before {
     top: 1px;
     transform: translateY(-100%);
 }
@@ -305,6 +305,7 @@ footer {
 
 .explore__container {
     padding-top: 12%;
+    padding-bottom: 12%;
 }
 
 .explore__prompt {
@@ -315,3 +316,6 @@ footer {
 }
 
 /* FOOTER */
+footer {
+    padding-top: 12%;
+}
