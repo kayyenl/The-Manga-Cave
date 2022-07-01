@@ -49,6 +49,10 @@ nav {
     background-color: #eeeeee;
 }
 
+a {
+    text-decoration: none;
+}
+
 .nav__container {
     width: 100%;
     display: flex;
@@ -70,7 +74,7 @@ ul {
 
 .nav__link {
     text-decoration: none;
-    margin-right: 16px;
+    margin: 0 8px;
     padding: 8px;
     font-size: 20px;
     font-weight: 700;
@@ -133,10 +137,18 @@ ul {
     border: none;
     font-size: 40px;
     text-align: center;
+    display: none;
 }
 
 .menu--open .menu__backdrop{
     display: flex;
+    opacity: 1;
+    visibility: visible;
+}
+
+.menu--open {
+    max-height: 100vh;
+    overflow-y: hidden;
 }
 
 .btn__menu:hover {
@@ -154,7 +166,8 @@ ul {
     display: flex;
     align-items: center;
     justify-content: center;
-    display: none;
+    visibility: hidden;
+    opacity: 0;
     transition: all 450ms ease;
 }
 
@@ -206,6 +219,10 @@ header {
 .img__slight-shrink {
     z-index: 2;
     padding: 30px;
+}
+
+.header__button {
+    cursor: pointer;
 }
 
 .header__description {
@@ -413,5 +430,9 @@ header {
 @media (max-width: 500px) {
     .nav__links {
         display: none;
+    }
+    
+    .btn__menu {
+        display: flex;
     }
 }

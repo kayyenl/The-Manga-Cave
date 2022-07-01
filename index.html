@@ -24,25 +24,25 @@
             </li>
             <li><a href="#" class="nav__link nav__link--primary">Books</a></li>
           </ul>
-        </div>
-        <button class="btn__menu" onclick="openMenu()">
+          <button class="btn__menu" onclick="openMenu()">
             <i class="fa-solid fa-bars"></i>
-        </button>
-        <div class="menu__backdrop">
+          </button>
+          <div class="menu__backdrop">
             <button class="btn__menu btn__menu--close" onclick="closeMenu()">
-                <i class="fa-solid fa-xmark"></i>
+              <i class="fa-solid fa-xmark"></i>
             </button>
             <ul class="menu__ul">
-                <li class="menu__list">
-                    <a href="#" class="menu__link">Home</a>
-                </li>
-                <li class="menu__list">
-                    <a href="#limiteded" class="menu__link">Books</a>
-                </li>
-                <li class="menu__list">
-                    <a href="" class="menu__link notallowed">Contact</a>
-                </li>
+              <li class="menu__list">
+                <a href="#" class="menu__link" onclick="closeMenu()">Home</a>
+              </li>
+              <li class="menu__list">
+                <a href="#limiteded" class="menu__link" onclick="closeMenu()">Books</a>
+              </li>
+              <li class="menu__list">
+                <a href="" class="menu__link notallowed">Contact</a>
+              </li>
             </ul>
+          </div>
         </div>
       </nav>
       <header>
@@ -57,7 +57,9 @@
               <span class="red__text"> single volume again.</span> Visit us in
               person or online!
             </h2>
-            <button class="header__button common__button">Browse volumes</button>
+            <button class="header__button common__button">
+              <a href="#limiteded"> <span class="red__text">Browse volumes</span></a>
+            </button>
           </div>
           <figure class="img__slight-shrink">
             <img src="undraw_books.svg" alt="" class="header__huge-image" />
@@ -107,8 +109,8 @@
                   Good <span class="red__text">prices!</span>
                 </h3>
                 <p class="highlight__para">
-                  Online membership costs less than a single phyi volume! What a bang
-                  for your buck.
+                  Online membership costs less than a single phyi volume! What a
+                  bang for your buck.
                 </p>
               </div>
             </div>
@@ -118,260 +120,261 @@
 
       <section id="limiteded">
         <div class="limiteded__container container">
-            <div class="row">
-                <h2><span class="red__text">Limited edition</span> collection volumes available!</h2>
-                <div class="books">
-
-                    <div class="book">
-                        <figure class="book__image--wrapper">
-                            <img src="hellsingd3.jpg" alt="" class="book__image">
-                        </figure>
-                        <div class="book__title">Hellsing Deluxe 3</div>
-                        <div class="book__ratings">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i> 
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <div class="book__price">
-                            <span class="book__price--normal">$64.99</span> $23.60
-                        </div>
-                    </div>
-
-                    <div class="book">
-                        <figure class="book__image--wrapper">
-                            <img src="berserkd7.jpg" alt="" class="book__image">
-                        </figure>
-                        <div class="book__title">Berserk Deluxe 7</div>
-                        <div class="book__ratings">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i> 
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <div class="book__price">
-                            <span class="book__price--normal">$74.99</span> $33.40
-                        </div>
-                    </div>
-
-                    <div class="book">
-                        <figure class="book__image--wrapper">
-                            <img src="immortald6.jpg" alt="" class="book__image">
-                        </figure>
-                        <div class="book__title">Blade of the Immortal Deluxe 6</div>
-                        <div class="book__ratings">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i> 
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <div class="book__price">
-                            <span class="book__price--normal">$54.99</span> $20.60
-                        </div>
-                    </div>
-                    
+          <div class="row">
+            <h2>
+              <span class="red__text">Limited edition</span> collection volumes
+              available!
+            </h2>
+            <div class="books">
+              <div class="book">
+                <figure class="book__image--wrapper">
+                  <img src="hellsingd3.jpg" alt="" class="book__image" />
+                </figure>
+                <div class="book__title">Hellsing Deluxe 3</div>
+                <div class="book__ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
                 </div>
+                <div class="book__price">
+                  <span class="book__price--normal">$64.99</span> $23.60
+                </div>
+              </div>
+
+              <div class="book">
+                <figure class="book__image--wrapper">
+                  <img src="berserkd7.jpg" alt="" class="book__image" />
+                </figure>
+                <div class="book__title">Berserk Deluxe 7</div>
+                <div class="book__ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal">$74.99</span> $33.40
+                </div>
+              </div>
+
+              <div class="book">
+                <figure class="book__image--wrapper">
+                  <img src="immortald6.jpg" alt="" class="book__image" />
+                </figure>
+                <div class="book__title">Blade of the Immortal Deluxe 6</div>
+                <div class="book__ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal">$54.99</span> $20.60
+                </div>
+              </div>
             </div>
+          </div>
         </div>
       </section>
 
       <section id="newbooks">
         <div class="container">
-            <div class="row">
-                <h2>Cheaper physical copies from <span class="red__text">The Manga Cave!</span></h2>
-                <div class="books">
-
-                    <div class="book">
-                        <figure class="book__image--wrapper">
-                            <img src="onepiece96.jpg" alt="" class="book__image">
-                        </figure>
-                        <div class="book__title">One Piece 96</div>
-                        <div class="book__ratings">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <div class="book__price">
-                            <span class="book__price--normal">$15.99</span> $9.60
-                        </div>
-                    </div>
-
-                    <div class="book">
-                        <figure class="book__image--wrapper">
-                            <img src="onepiece97.jpg" alt="" class="book__image">
-                        </figure>
-                        <div class="book__title">One Piece 97</div>
-                        <div class="book__ratings">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <div class="book__price">
-                            <span class="book__price--normal">$15.99</span> $9.00
-                        </div>
-                    </div>
-
-                    <div class="book">
-                        <figure class="book__image--wrapper">
-                            <img src="onepiece98.jpg" alt="" class="book__image">
-                        </figure>
-                        <div class="book__title">One Piece 98</div>
-                        <div class="book__ratings">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                        </div>
-                        <div class="book__price">
-                            <span class="book__price--normal">$15.99</span> $7.60
-                        </div>
-                    </div>
-
-                    <div class="book">
-                        <figure class="book__image--wrapper">
-                            <img src="jjk14.jpg" alt="" class="book__image">
-                        </figure>
-                        <div class="book__title">Jujutsu Kaisen 14</div>
-                        <div class="book__ratings">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <div class="book__price">
-                            <span class="book__price--normal">$15.99</span> $10.60
-                        </div>
-                    </div>
-
-                    <div class="book">
-                        <figure class="book__image--wrapper">
-                            <img src="jjk15.jpg" alt="" class="book__image">
-                        </figure>
-                        <div class="book__title">Jujutsu Kaisen 15</div>
-                        <div class="book__ratings">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                            <i class="fa-regular fa-star"></i>
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <div class="book__price">
-                            <span class="book__price--normal">$15.99</span> $6.40
-                        </div>
-                    </div>
-                    <div class="book">
-                        <figure class="book__image--wrapper">
-                            <img src="jjk16.jpg" alt="" class="book__image">
-                        </figure>
-                        <div class="book__title">Jujutsu Kaisen 16</div>
-                        <div class="book__ratings">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <div class="book__price">
-                            <span class="book__price--normal">$15.99</span> $9.90
-                        </div>
-                    </div>
-                    <div class="book">
-                        <figure class="book__image--wrapper">
-                            <img src="spy5.jpg" alt="" class="book__image">
-                        </figure>
-                        <div class="book__title">Spy x Family 5</div>
-                        <div class="book__ratings">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <div class="book__price">
-                            <span class="book__price--normal">$15.99</span> $5.60
-                        </div>
-                    </div>
-                    <div class="book">
-                        <figure class="book__image--wrapper">
-                            <img src="spy6.jpg" alt="" class="book__image">
-                        </figure>
-                        <div class="book__title">Spy x Family 6</div>
-                        <div class="book__ratings">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i>
-                        </div>
-                        <div class="book__price">
-                            <span class="book__price--normal">$15.99</span> $10.00
-                        </div>
-                    </div>
-                    <div class="book">
-                        <figure class="book__image--wrapper">
-                            <img src="spy7.jpg" alt="" class="book__image">
-                        </figure>
-                        <div class="book__title">Spy x Family 7</div>
-                        <div class="book__ratings">
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star"></i>
-                            <i class="fa-solid fa-star-half-stroke"></i> 
-                            <i class="fa-regular fa-star"></i>
-                        </div>
-                        <div class="book__price">
-                            <span class="book__price--normal">$15.99</span> $3.60
-                        </div>
-                    </div>
-
+          <div class="row">
+            <h2>
+              Cheaper physical copies from
+              <span class="red__text">The Manga Cave!</span>
+            </h2>
+            <div class="books">
+              <div class="book">
+                <figure class="book__image--wrapper">
+                  <img src="onepiece96.jpg" alt="" class="book__image" />
+                </figure>
+                <div class="book__title">One Piece 96</div>
+                <div class="book__ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
                 </div>
+                <div class="book__price">
+                  <span class="book__price--normal">$15.99</span> $9.60
+                </div>
+              </div>
+
+              <div class="book">
+                <figure class="book__image--wrapper">
+                  <img src="onepiece97.jpg" alt="" class="book__image" />
+                </figure>
+                <div class="book__title">One Piece 97</div>
+                <div class="book__ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal">$15.99</span> $9.00
+                </div>
+              </div>
+
+              <div class="book">
+                <figure class="book__image--wrapper">
+                  <img src="onepiece98.jpg" alt="" class="book__image" />
+                </figure>
+                <div class="book__title">One Piece 98</div>
+                <div class="book__ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal">$15.99</span> $7.60
+                </div>
+              </div>
+
+              <div class="book">
+                <figure class="book__image--wrapper">
+                  <img src="jjk14.jpg" alt="" class="book__image" />
+                </figure>
+                <div class="book__title">Jujutsu Kaisen 14</div>
+                <div class="book__ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal">$15.99</span> $10.60
+                </div>
+              </div>
+
+              <div class="book">
+                <figure class="book__image--wrapper">
+                  <img src="jjk15.jpg" alt="" class="book__image" />
+                </figure>
+                <div class="book__title">Jujutsu Kaisen 15</div>
+                <div class="book__ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal">$15.99</span> $6.40
+                </div>
+              </div>
+              <div class="book">
+                <figure class="book__image--wrapper">
+                  <img src="jjk16.jpg" alt="" class="book__image" />
+                </figure>
+                <div class="book__title">Jujutsu Kaisen 16</div>
+                <div class="book__ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal">$15.99</span> $9.90
+                </div>
+              </div>
+              <div class="book">
+                <figure class="book__image--wrapper">
+                  <img src="spy5.jpg" alt="" class="book__image" />
+                </figure>
+                <div class="book__title">Spy x Family 5</div>
+                <div class="book__ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal">$15.99</span> $5.60
+                </div>
+              </div>
+              <div class="book">
+                <figure class="book__image--wrapper">
+                  <img src="spy6.jpg" alt="" class="book__image" />
+                </figure>
+                <div class="book__title">Spy x Family 6</div>
+                <div class="book__ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal">$15.99</span> $10.00
+                </div>
+              </div>
+              <div class="book">
+                <figure class="book__image--wrapper">
+                  <img src="spy7.jpg" alt="" class="book__image" />
+                </figure>
+                <div class="book__title">Spy x Family 7</div>
+                <div class="book__ratings">
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star"></i>
+                  <i class="fa-solid fa-star-half-stroke"></i>
+                  <i class="fa-regular fa-star"></i>
+                </div>
+                <div class="book__price">
+                  <span class="book__price--normal">$15.99</span> $3.60
+                </div>
+              </div>
             </div>
+          </div>
         </div>
       </section>
 
       <section id="explore">
         <div class="explore__container container">
-            <div class="row">
-                <div class="explore__prompt">
-                    <h2 class="explore__text">
-                        Explore more <span class="red__text">books</span>
-                    </h2>
-                    <button class="explore__button common__button">Browse our volumes</button>
-                </div>
+          <div class="row">
+            <div class="explore__prompt">
+              <h2 class="explore__text">
+                Explore more <span class="red__text">books</span>
+              </h2>
+              <button class="explore__button common__button notallowed">
+                <span class="red__text">Browse our volumes</span>
+              </button>
             </div>
+          </div>
         </div>
       </section>
-
-      
     </main>
 
     <footer id="footer">
       <div class="container">
-          <div class="row">
-              <div class="footer__details">
-                <figure class="footer__logo">
-                      <img src="shopsymbol6.png" alt="" class="logo">
-                </figure>
-                <div class="footer__links">
-                    <a href="#" class="footer__link">Home</a>
-                    <a href="#landing" class="footer__link">About</a>
-                    <a href="#limiteded" class="footer__link">Books</a>
-                    <a href="#" class="footer__link notallowed">Contact</a>
-                </div>
-                <p class="footer__copyright">Copyright © The Manga Cave, 2022.</p>
-              </div>
+        <div class="row">
+          <div class="footer__details">
+            <figure class="footer__logo">
+              <img src="shopsymbol6.png" alt="" class="logo" />
+            </figure>
+            <div class="footer__links">
+              <a href="#" class="footer__link">Home</a>
+              <a href="#landing" class="footer__link">About</a>
+              <a href="#limiteded" class="footer__link">Books</a>
+              <a href="#" class="footer__link notallowed">Contact</a>
+            </div>
+            <p class="footer__copyright">Copyright © The Manga Cave, 2022.</p>
           </div>
+        </div>
       </div>
     </footer>
-
-</body>
+  </body>
 </html>
