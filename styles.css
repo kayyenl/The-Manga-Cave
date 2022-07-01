@@ -80,7 +80,7 @@ ul {
 
 .nav__link--primary:hover {
     text-decoration: underline;
-    color: #f41f43
+    color: #f41f43;
 }
 
 .container {
@@ -104,6 +104,22 @@ ul {
 
 .fa-highlights {
     transform: scale(1.70);
+}
+
+.common__button {
+    padding: 12px 28px;
+    border-radius: 20px;
+    background-color: #eeeeee;
+    font-weight: 700;
+    font-size: 20px;
+    margin-top: 12px;
+    transition: all 450ms ease;
+}
+
+.common__button:hover {
+    text-decoration: solid;
+    transform: scale(1.1);
+    color: #f41f43;
 }
 
 /* HEADER */
@@ -137,14 +153,6 @@ header {
     justify-content: center;
 }
 
-.header__button {
-    padding: 12px 28px;
-    border-radius: 20px;
-    background-color: #eeeeee;
-    font-weight: 700;
-    font-size: 20px;
-    margin-top: 12px;
-}
 
 .header__button:active {
     transform: translateY(3px);
@@ -159,7 +167,8 @@ header {
 /* HIGHLIGHTS AND NEWBOOKS */
 
 #highlights,
-#newbooks {
+#newbooks,
+footer {
     background-color: #f3c8d0;
     position: relative;
 }
@@ -167,7 +176,8 @@ header {
 #highlights:before,
 #highlights:after, 
 #newbooks:before,
-#newbooks:after {
+#newbooks:after,
+footer {
     content: "";
     background: url(wave.png);
     position: absolute;
@@ -178,7 +188,8 @@ header {
 }
 
 #highlights:before,
-#newbooks:before {
+#newbooks:before,
+footer {
     top: 1px;
     transform: translateY(-100%);
 }
@@ -274,7 +285,7 @@ header {
 
 .book__price--normal {
     text-decoration: line-through;
-    color: #bfbfbf;
+    color: #897575;
     padding-right: 6px;
 }
 
@@ -286,3 +297,21 @@ header {
     margin: 2px 0;
 }
 
+/* EXPLORE MORE */
+
+#explore {
+    background-color: #eeeeee;
+}
+
+.explore__container {
+    padding-top: 12%;
+}
+
+.explore__prompt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* FOOTER */
